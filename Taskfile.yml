@@ -1,0 +1,10 @@
+# https://taskfile.dev
+version: '3'
+tasks:
+  default: mix test
+  run: mix run --no-halt
+  script: chmod +x script/*.exs
+  setup:
+    cmds:
+    - mix deps.get
+  
